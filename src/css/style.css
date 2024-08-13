@@ -1,0 +1,98 @@
+body {
+    height: 100vh;
+    background-image: url(../images/bg-repeat.jpg);
+    background-size: contain;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.about {
+    color: white;
+    width: 300px;
+}
+
+.about h2 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+}
+
+.form input {
+    width: 300px;
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.form input:not(:first-child) {
+    margin-top: 15px;
+}
+
+.form textarea {
+    width: 300px;
+    height: 100px;
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 5px;
+    resize: none;
+    padding: 8px;
+    margin-top: 15px;
+}
+
+.form p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.form button {
+    background-color: #3CCC87;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+}
+
+/* Linkado com JS */
+
+.form .obrigatorio {
+    border: red 1.5px solid;
+}
+
+.form .required {
+    color: red;
+    display: none;
+}
+
+.form .required.active {
+    display: block;
+}
